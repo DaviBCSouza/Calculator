@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calculadora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/expressao"
+        android:layout_width="match_parent"
+        android:layout_height="325dp">
+
+        <TextView
+            android:id="@+id/textViewExpressao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/cinza_escuro"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="6×6" />
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/cinza_claro"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewExpressao"
+            tools:text="36" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:id="@+id/teclado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSin"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonSin"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCos"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonCos"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonTan"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonTan"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonLn"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonLn"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonLog"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonLog"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonFat"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonFat"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPi"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonPi"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonFunExp"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonFunExp"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonParentese1"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonParentAbrindo"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonParentese2"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonParentFechando"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonRaiz"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonRaiz"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPotencia"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonPoten"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonI"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonI"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonX"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:text="@string/buttonX"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <ImageButton
+                android:id="@+id/buttonAdd"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/azul_turquesa"
+                android:contentDescription="@string/buttonAdd"
+                android:src="@drawable/ic_adicionar"
+                android:textAllCaps="false"
+                android:textColor="@color/cinza_escuro"
+                tools:ignore="SpeakableTextPresentCheck,RedundantDescriptionCheck" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSete"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonSete"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonOito"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonOito"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonNove"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonNove"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDivisao"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_claro"
+                android:text="@string/buttonDiv"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDel"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_claro"
+                android:text="@string/buttonDel"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonQuatro"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonQuatro"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCinco"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonCinco"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSeis"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonSeis"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonMultiplicacao"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_claro"
+                android:text="@string/buttonMult"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonVoid"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_claro"
+                android:textColor="@color/white"
+                tools:ignore="SpeakableTextPresentCheck,VisualLintButtonSize" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonUm"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonUm"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDois"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonDois"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonTres"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonTres"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubtracao"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_claro"
+                android:text="@string/buttonSub"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonVoid2"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_claro"
+                android:textColor="@color/white"
+                tools:ignore="SpeakableTextPresentCheck,VisualLintButtonSize" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPonto"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonPonto"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonZero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:text="@string/buttonZero"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonVoid3"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_escuro"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="SpeakableTextPresentCheck,VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonAdicao"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_claro"
+                android:text="@string/buttonAdic"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCalcular"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cinza_claro"
+                android:text="@string/buttonCalcular"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="VisualLintButtonSize" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

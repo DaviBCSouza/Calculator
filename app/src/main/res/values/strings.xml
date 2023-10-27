@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">CalculadoraCientifica</string>
+    <string name="buttonSin">sin</string>
+    <string name="buttonCos">cos</string>
+    <string name="buttonTan">tan</string>
+    <string name="buttonLn">ln</string>
+    <string name="buttonLog">log</string>
+    <string name="buttonFat">!</string>
+    <string name="buttonPi">π</string>
+    <string name="buttonFunExp">e</string>
+    <string name="buttonParentAbrindo">(</string>
+    <string name="buttonParentFechando">)</string>
+    <string name="buttonRaiz">√</string>
+    <string name="buttonPoten">^</string>
+    <string name="buttonI">i</string>
+    <string name="buttonX">X</string>
+    <string name="buttonAdd">Button</string>
+    <string name="buttonSete">7</string>
+    <string name="buttonOito">8</string>
+    <string name="buttonNove">9</string>
+    <string name="buttonDiv">÷</string>
+    <string name="buttonDel">DEL</string>
+    <string name="buttonQuatro">4</string>
+    <string name="buttonCinco">5</string>
+    <string name="buttonSeis">6</string>
+    <string name="buttonMult">×</string>
+    <string name="buttonUm">1</string>
+    <string name="buttonDois">2</string>
+    <string name="buttonTres">3</string>
+    <string name="buttonSub">-</string>
+    <string name="buttonPonto">.</string>
+    <string name="buttonZero">0</string>
+    <string name="buttonAdic">+</string>
+    <string name="buttonCalcular">=</string>
+    <string name="mensagemError">Error 404</string>
+</resources>
