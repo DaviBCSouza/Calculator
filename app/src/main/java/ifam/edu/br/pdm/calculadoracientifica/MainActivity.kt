@@ -3,6 +3,7 @@ package ifam.edu.br.pdm.calculadoracientifica
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
+import android.widget.TableRow
 import androidx.appcompat.app.AppCompatActivity
 import ifam.edu.br.pdm.calculadoracientifica.databinding.ActivityMainBinding
 import org.mariuszgromada.math.mxparser.Expression
@@ -10,13 +11,18 @@ import org.mariuszgromada.math.mxparser.Expression
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private var telaVisivel = true
+    private lateinit var row1: TableRow
+    private lateinit var row2: TableRow
+
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        row1 = findViewById(R.id.tecladoFuncoes)
+        row2 = findViewById(R.id.tecladoFuncoes2)
 
         val expressao = binding.textViewExpressao
 
@@ -37,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonLog.setOnClickListener {
-            expressao.text = "${expressao.text}log("
+            expressao.text = "${expressao.text}lg("
         }
 
         binding.buttonFat.setOnClickListener {
@@ -49,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonFunExp.setOnClickListener {
-            expressao.text = "${expressao.text}e"
+            expressao.text = "${expressao.text}exp("
         }
 
         binding.buttonParentese1.setOnClickListener {
@@ -69,22 +75,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonI.setOnClickListener {
-            expressao.text = "${expressao.text}i("
+            expressao.text = "${expressao.text}Ei("
         }
 
         binding.buttonX.setOnClickListener {
-            expressao.text = "${expressao.text}x("
+            expressao.text = "${expressao.text}Fib("
         }
 
         binding.buttonAdd.setOnClickListener {
-            val tela = binding.expressao
-            telaVisivel = !telaVisivel
-
-            if (telaVisivel) {
-                tela.visibility = View.VISIBLE
-            } else {
-                tela.visibility = View.GONE
-            }
+            trocarVisib(row1)
+            trocarVisib(row2)
         }
 
         binding.buttonUm.setOnClickListener {
@@ -131,7 +131,7 @@ class MainActivity : AppCompatActivity() {
             expressao.text = "${expressao.text}."
         }
 
-        binding.buttonVoid3.setOnClickListener {
+        binding.buttonC.setOnClickListener {
             expressao.text = ""
             binding.textViewResultado.text = ""
         }
@@ -164,6 +164,14 @@ class MainActivity : AppCompatActivity() {
             } else {
                 binding.textViewResultado.text = resultado.toString()
             }
+        }
+    }
+
+    private fun trocarVisib(row: TableRow) {
+        if (row.visibility == View.VISIBLE) {
+            row.visibility = View.GONE
+        } else {
+            row.visibility = View.VISIBLE
         }
     }
 }

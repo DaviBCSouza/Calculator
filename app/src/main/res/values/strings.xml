@@ -33,4 +33,5 @@
     <string name="buttonAdic">+</string>
     <string name="buttonCalcular">=</string>
     <string name="mensagemError">Error 404</string>
+    <string name="buttonC">C</string>
 </resources>

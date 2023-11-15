@@ -45,10 +45,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TableRow>
+        <TableRow android:id="@+id/tecladoFuncoes">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonSin"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonSin"
@@ -59,6 +60,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonCos"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonCos"
@@ -69,6 +71,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonTan"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonTan"
@@ -79,6 +82,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonLn"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonLn"
@@ -89,6 +93,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonLog"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonLog"
@@ -99,10 +104,11 @@
 
         </TableRow>
 
-        <TableRow>
+        <TableRow android:id="@+id/tecladoFuncoes2">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonFat"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonFat"
@@ -113,6 +119,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonPi"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonPi"
@@ -123,6 +130,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonFunExp"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonFunExp"
@@ -133,6 +141,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonParentese1"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonParentAbrindo"
@@ -143,6 +152,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonParentese2"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonParentFechando"
@@ -157,6 +167,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonRaiz"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonRaiz"
@@ -167,6 +178,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonPotencia"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonPoten"
@@ -177,6 +189,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonI"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonI"
@@ -187,6 +200,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonX"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:text="@string/buttonX"
@@ -197,6 +211,7 @@
             <ImageButton
                 android:id="@+id/buttonAdd"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/azul_turquesa"
                 android:contentDescription="@string/buttonAdd"
@@ -212,6 +227,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonSete"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonSete"
@@ -223,6 +239,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonOito"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonOito"
@@ -234,6 +251,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonNove"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonNove"
@@ -245,6 +263,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonDivisao"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_claro"
                 android:text="@string/buttonDiv"
@@ -255,6 +274,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonDel"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_claro"
                 android:text="@string/buttonDel"
@@ -269,6 +289,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonQuatro"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonQuatro"
@@ -280,6 +301,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonCinco"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonCinco"
@@ -291,6 +313,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonSeis"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonSeis"
@@ -302,6 +325,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonMultiplicacao"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_claro"
                 android:text="@string/buttonMult"
@@ -312,6 +336,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonVoid"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_claro"
                 android:textColor="@color/white"
@@ -324,6 +349,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonUm"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonUm"
@@ -335,6 +361,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonDois"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonDois"
@@ -346,6 +373,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonTres"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonTres"
@@ -357,6 +385,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonSubtracao"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_claro"
                 android:text="@string/buttonSub"
@@ -367,6 +396,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonVoid2"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_claro"
                 android:textColor="@color/white"
@@ -379,6 +409,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonPonto"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonPonto"
@@ -390,6 +421,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonZero"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
                 android:text="@string/buttonZero"
@@ -399,17 +431,20 @@
                 tools:ignore="VisualLintButtonSize" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonVoid3"
+                android:id="@+id/buttonC"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_escuro"
-                android:textAllCaps="false"
+                android:text="@string/buttonC"
                 android:textColor="@color/white"
+                android:textSize="25sp"
                 tools:ignore="SpeakableTextPresentCheck,VisualLintButtonSize" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonAdicao"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_claro"
                 android:text="@string/buttonAdic"
@@ -420,6 +455,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonCalcular"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:background="@color/cinza_claro"
                 android:text="@string/buttonCalcular"
